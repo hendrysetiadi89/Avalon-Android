@@ -18,4 +18,28 @@
 
     </FrameLayout>
 
+    <ImageView
+        android:id="@+id/button_nav_left"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="start|bottom"
+        android:background="@drawable/circle_green"
+        android:src="@drawable/arrow_left_bold"
+        android:padding="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_24" />
+
+    <ImageView
+        android:id="@+id/button_nav_right"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/arrow_right_bold"
+        android:padding="@dimen/dp_8"
+        android:background="@drawable/circle_green"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_24" />
+
 </FrameLayout>

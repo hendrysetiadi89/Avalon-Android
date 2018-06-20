@@ -1,6 +1,7 @@
 package rhynedev.avalon.base;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -14,6 +15,11 @@ import rhynedev.avalon.R;
  */
 
 public class BaseActivity extends AppCompatActivity {
+
+    public static final String SAVED_TAG = "tag";
+
+    private String tag;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         View decorView = getWindow().getDecorView();
@@ -21,8 +27,15 @@ public class BaseActivity extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
+        if (savedInstanceState!= null) {
+            tag = savedInstanceState.getString(SAVED_TAG);
+        }
         super.onCreate(savedInstanceState);
 
+    }
+
+    public String getCurrentFragmentTag() {
+        return tag;
     }
 
     public void replaceFragment(Fragment fragment, boolean addToBackstack, boolean withAnim) {
@@ -65,4 +78,9 @@ public class BaseActivity extends AppCompatActivity {
         // no operation
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(SAVED_TAG, tag);
+    }
 }

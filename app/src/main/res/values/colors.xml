@@ -16,4 +16,24 @@
 
     <color name="black_trans_70">#B3000000</color>
     <color name="black_trans_85">#D9000000</color>
+
+    <color name="green_100">#c8e6c9</color>
+    <color name="green_200">#a5d6a7</color>
+    <color name="green_300">#81c784</color>
+    <color name="green_400">#66bb6a</color>
+    <color name="green_500">#4caf50</color>
+    <color name="green_600">#43a047</color>
+    <color name="green_700">#388e3c</color>
+    <color name="green_800">#2e7d32</color>
+    <color name="green_900">#1b5e20</color>
+
+    <color name="lt_green_100">#dcedc8</color>
+    <color name="lt_green_200">#c5e1a5</color>
+    <color name="lt_green_300">#aed581</color>
+    <color name="lt_green_400">#9ccc65</color>
+    <color name="lt_green_500">#8bc34a</color>
+    <color name="lt_green_600">#7cb342</color>
+    <color name="lt_green_700">#689f38</color>
+    <color name="lt_green_800">#558b2f</color>
+    <color name="lt_green_900">#33691e</color>
 </resources>
