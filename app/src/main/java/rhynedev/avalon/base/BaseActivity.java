@@ -2,6 +2,7 @@ package rhynedev.avalon.base;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.support.annotation.CallSuper;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -74,8 +75,10 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
+    @CallSuper
     protected void setUpTitleByTag(String tag){
         // no operation
+        this.tag = tag;
     }
 
     @Override

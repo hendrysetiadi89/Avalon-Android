@@ -66,6 +66,7 @@ public class MainActivity extends BaseActivity implements PlayNowFragment.OnPlay
 
     @Override
     protected void setUpTitleByTag(String tag) {
+        super.setUpTitleByTag(tag);
         if (tag == null || tag.equals(PlayNowFragment.class.getSimpleName())){
             ivNavLeft.setVisibility(View.GONE);
             ivNavRight.setVisibility(View.GONE);
