@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Avalon</string>
+    <string name="play_now">Play Now</string>
+    <string name="setup_players">Set up Players</string>
 </resources>
