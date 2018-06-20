@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- palette -->
+    <color name="gray_solid_800">#424242</color>
+    <color name="gray_solid_700">#616161</color>
+    <color name="gray_solid_500">#9E9E9E</color>
+    <color name="gray_solid_400">#BDBDBD</color>
+    <color name="gray_solid_300">#E0E0E0</color>
+    <color name="gray_solid_100">#F5F5F5</color>
+
+    <color name="gray_trans_10">#1A9E9E9E</color>
+
+    <color name="black_trans_70">#B3000000</color>
+    <color name="black_trans_85">#D9000000</color>
+</resources>
