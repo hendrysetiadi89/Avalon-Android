@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#CD853F">
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/mode_setup"-->
+    <!--android:textSize="@dimen/sp_20"-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_marginTop="@dimen/dp_8"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/mode"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_vertical"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rect_gradient_round_left"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/normal"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rect_gradient_round_right"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/chaos"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="@string/no_of_players"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_vertical"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <TextView
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rect_gradient_round_left"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_8"
+                    android:textStyle="bold"
+                    android:text="@string/p_5" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rect_gradient"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/p_6"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rect_gradient"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/p_7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rect_gradient"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/p_8"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rect_gradient"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/p_9"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rect_gradient_round_right"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/p_10"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@android:color/transparent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="@dimen/dp_100"
+                    android:paddingEnd="@dimen/dp_8"
+                    android:paddingLeft="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingStart="@dimen/dp_4"
+                    android:paddingTop="@dimen/dp_8">
+
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        app:alignContent="stretch"
+                        app:alignItems="stretch"
+                        app:flexDirection="row_reverse"
+                        app:flexWrap="wrap">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_4"
+                            android:background="#FFFFFF"
+                            android:padding="@dimen/dp_2"
+                            app:cardElevation="@dimen/dp_4"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/yellow_100">
+
+                                <TextView
+                                    android:id="@+id/textview1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="@string/x_merlin" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@drawable/paper_pin" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:text="Q" />
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_4"
+                            android:background="#FFFFFF"
+                            android:padding="@dimen/dp_2"
+                            app:cardElevation="@dimen/dp_4"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/yellow_100">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="@string/x_percival" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@drawable/paper_pin" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:text="Q" />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_4"
+                            android:background="#FFFFFF"
+                            android:padding="@dimen/dp_2"
+                            app:cardElevation="@dimen/dp_4"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/yellow_100">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="@string/x_good_servant" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@drawable/paper_pin" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:text="Q" />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </com.google.android.flexbox.FlexboxLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minHeight="@dimen/dp_100"
+                    android:paddingEnd="@dimen/dp_4"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_4"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_8">
+
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        app:alignContent="stretch"
+                        app:alignItems="stretch"
+                        app:flexWrap="wrap">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_4"
+                            android:background="#FFFFFF"
+                            android:padding="@dimen/dp_2"
+                            app:cardElevation="@dimen/dp_4"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/yellow_100">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="@string/x_assassin" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@drawable/paper_pin" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:text="Q" />
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_4"
+                            android:background="#FFFFFF"
+                            android:padding="@dimen/dp_2"
+                            app:cardElevation="@dimen/dp_4"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/yellow_100">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="@string/x_morgana" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@drawable/paper_pin" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:text="Q" />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_4"
+                            android:background="#FFFFFF"
+                            android:padding="@dimen/dp_2"
+                            app:cardElevation="@dimen/dp_4"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/yellow_100">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="@string/x_mordred" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@drawable/paper_pin" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:text="Q" />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_4"
+                            android:background="#FFFFFF"
+                            android:padding="@dimen/dp_2"
+                            app:cardElevation="@dimen/dp_4"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/yellow_100">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="@string/x_oberon" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@drawable/paper_pin" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:text="Q" />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_4"
+                            android:background="#FFFFFF"
+                            android:padding="@dimen/dp_2"
+                            app:cardElevation="@dimen/dp_4"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/yellow_100">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/dp_4"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_4"
+                                    android:text="@string/x_evil_servant" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:src="@drawable/paper_pin" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:text="Q" />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </com.google.android.flexbox.FlexboxLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_48"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/button_nav_left"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="start|bottom"
+        android:layout_marginBottom="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_24"
+        android:background="@drawable/button_circle_gradient"
+        android:padding="@dimen/dp_8"
+        android:src="@drawable/arrow_left_bold" />
+
+    <ImageView
+        android:id="@+id/button_nav_right"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="@drawable/button_circle_gradient"
+        android:padding="@dimen/dp_8"
+        android:src="@drawable/arrow_right_bold" />
+</FrameLayout>

@@ -1,5 +1,28 @@
 <resources>
     <string name="app_name">Avalon</string>
     <string name="play_now">Play Now</string>
+    <string name="mode_setup">Setup 1 of 3</string>
     <string name="setup_players">Set up Players</string>
+    <string name="mode">Mode</string>
+    <string name="no_of_players">No. of Players</string>
+    <string name="normal">Normal</string>
+    <string name="chaos">Chaos</string>
+    <string name="p_5">5p</string>
+    <string name="p_6">6p</string>
+    <string name="p_7">7p</string>
+    <string name="p_8">8p</string>
+    <string name="p_9">9p</string>
+    <string name="p_10">10p</string>
+    <string name="merlin">Merlin</string>
+    <string name="percival">Percival</string>
+    <string name="servant">Servant</string>
+
+    <string name="x_merlin">1 Merlin</string>
+    <string name="x_percival">1 Percival</string>
+    <string name="x_good_servant">%1$d Loyal Servant(s)</string>
+    <string name="x_morgana">1 Morgana</string>
+    <string name="x_assassin">1 Assassin</string>
+    <string name="x_mordred">1 Mordred</string>
+    <string name="x_oberon">1 Oberon</string>
+    <string name="x_evil_servant">%1$d Evil Servant(s)</string>
 </resources>

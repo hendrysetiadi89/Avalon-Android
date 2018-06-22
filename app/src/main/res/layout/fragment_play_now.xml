@@ -6,15 +6,26 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
         <Button
             android:id="@+id/tv_play_now"
             android:layout_width="@dimen/dp_200"
             android:layout_height="wrap_content"
             android:text="@string/play_now"
             android:layout_gravity="center"
-            android:textSize="@dimen/sp_20"
+            android:textSize="@dimen/sp_24"
+            android:textColor="@color/black_trans_85"
             android:paddingBottom="@dimen/dp_16"
             android:paddingTop="@dimen/dp_16"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            android:background="@drawable/rect_green"
+            android:foreground="?attr/selectableItemBackground"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
     </LinearLayout>
 </FrameLayout>
